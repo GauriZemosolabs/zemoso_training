@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+    <section class="full-height">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo.jpg" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutUs">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1> I'm <span>WEB DEVELOPER</span> from India</h1>
+                <p>I aim to work in a challenging environment that provides opportunities for
+                    professional growth and development, where I can contribute to the success
+                    of the organization by applying my technical expertise and problem-solving
+                    skills.<br> 
+                    I am committed to continuously learning and adapting to new
+                    technologies and industry trends, and working collaboratively with a team
+                    to deliver high-quality software products.<br>
+                    Ultimately, my goal is to become a skilled software developer, with a strong
+                    understanding of both technical and business aspects, and make a
+                    meaningful impact on the world through technology.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    </header>
+    <!------About Us-->
+<main>
+    <section class="full-height">
+    <div id="aboutUs">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image.jpeg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="tab-titles">
+                    <p class="tab-link1">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>
+                            I am working on Python from last 2 years and used it in my many major and minor projects.</li>
+                        <li><span>HTML</span><br>
+                            HTML is one of the languages used in Web Development and I had learned in the 2nd year of my graduation. </li>
+                        <li><span>SQL</span><br>
+                            SQL is the structured query language and i had learned it in my 3rd year of Bachelors.  </li>
+                    </ul>
+                </div>
+                
+                <p class="tab-link2" >Education</p>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelors of Technology</span><br>
+                            Computer Science and Engineering<br>
+                            United College of Engineering and Research, Prayagraj<br>
+                            (2019-2023)</li>
+                        <li><span>Intermediate (12th)</span><br>
+                            PCM<br> Navayuga Radience Senior Secondary School, Lucknow<br>
+                            (2017-2019)
+                        </li>
+                        <li><span>High-School (10th)</span><br>
+                            Navayuga Radience Senior Secondary School, Lucknow <br>
+                            (2017-2019)</li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!------Contact------>
+    <section class="full-height">
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>gauridwivedi82@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9695389552</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-github"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="Updated_Resume (2).pdf" class="btn btn2" download >Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="number" name="contact" placeholder="Your Contact Number" required>
+                        <input type="text" name="company" placeholder="Your Company Name">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</main>
+
+<section id="gallery" class="full-height">
+    <div class="container">
+        <div class="heading">
+            <h1>Photo <span>Gallery</span></h1>
+        </div>
+        <div class="grid">
+            <div class="dream">
+            <img class="box1" src="img1.jpg" alt="1">
+            <img class="box2" src="img2.jpg" alt="2">
+            </div>
+
+            <div class="dream">
+                <img class="box3" src="im3.jpg" alt="3">
+                <img class="box4" src="img.jpg" alt="4">
+            </div>
+
+            <div class="dream">
+                <img class="box5" src="img5.jpg" alt="5">
+                <img class="box7" src="img7.jpg" alt="7">
+            </div>
+        </div>
+    </div>
+
+</section>
+<script src="https://kit.fontawesome.com/d2adfe0e73.js" crossorigin="anonymous"></script>
+<script>
+var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
